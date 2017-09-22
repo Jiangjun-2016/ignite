@@ -17,11 +17,12 @@
 
 package org.apache.ignite.examples.java8.computegrid;
 
-import java.util.Collection;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteException;
 import org.apache.ignite.Ignition;
 import org.apache.ignite.examples.ExampleNodeStartup;
+
+import java.util.Collection;
 
 /**
  * Demonstrates broadcasting computations within cluster.

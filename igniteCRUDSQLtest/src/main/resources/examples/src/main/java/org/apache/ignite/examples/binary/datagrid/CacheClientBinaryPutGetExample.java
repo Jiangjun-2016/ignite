@@ -17,21 +17,22 @@
 
 package org.apache.ignite.examples.binary.datagrid;
 
-import java.sql.Timestamp;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteCache;
 import org.apache.ignite.Ignition;
+import org.apache.ignite.binary.BinaryObject;
 import org.apache.ignite.cache.CacheAtomicityMode;
 import org.apache.ignite.cache.CacheMode;
 import org.apache.ignite.configuration.CacheConfiguration;
 import org.apache.ignite.examples.model.Address;
 import org.apache.ignite.examples.model.Organization;
 import org.apache.ignite.examples.model.OrganizationType;
-import org.apache.ignite.binary.BinaryObject;
+
+import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * This example demonstrates use of binary objects with Ignite cache.

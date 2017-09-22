@@ -17,17 +17,18 @@
 
 package org.apache.ignite.examples.datagrid;
 
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-import javax.cache.processor.EntryProcessor;
-import javax.cache.processor.EntryProcessorException;
-import javax.cache.processor.MutableEntry;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteCache;
 import org.apache.ignite.IgniteException;
 import org.apache.ignite.Ignition;
 import org.apache.ignite.examples.ExampleNodeStartup;
+
+import javax.cache.processor.EntryProcessor;
+import javax.cache.processor.EntryProcessorException;
+import javax.cache.processor.MutableEntry;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * This example demonstrates the simplest code that populates the distributed cache

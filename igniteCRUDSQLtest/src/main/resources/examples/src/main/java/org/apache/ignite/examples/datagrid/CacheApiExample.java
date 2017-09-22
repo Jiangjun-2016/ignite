@@ -17,14 +17,15 @@
 
 package org.apache.ignite.examples.datagrid;
 
-import java.util.concurrent.ConcurrentMap;
-import javax.cache.processor.EntryProcessor;
-import javax.cache.processor.MutableEntry;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteCache;
 import org.apache.ignite.IgniteException;
 import org.apache.ignite.Ignition;
 import org.apache.ignite.examples.ExampleNodeStartup;
+
+import javax.cache.processor.EntryProcessor;
+import javax.cache.processor.MutableEntry;
+import java.util.concurrent.ConcurrentMap;
 
 /**
  * This example demonstrates some of the cache rich API capabilities.

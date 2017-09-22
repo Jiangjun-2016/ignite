@@ -17,7 +17,6 @@
 
 package org.apache.ignite.examples.computegrid;
 
-import java.util.Collection;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteException;
 import org.apache.ignite.Ignition;
@@ -25,6 +24,8 @@ import org.apache.ignite.examples.ExampleNodeStartup;
 import org.apache.ignite.lang.IgniteCallable;
 import org.apache.ignite.lang.IgniteRunnable;
 import org.apache.ignite.resources.IgniteInstanceResource;
+
+import java.util.Collection;
 
 /**
  * Demonstrates broadcasting computations within cluster.

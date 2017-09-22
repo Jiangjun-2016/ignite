@@ -17,9 +17,6 @@
 
 package org.apache.ignite.examples.streaming;
 
-import java.util.List;
-import java.util.Random;
-import javax.cache.processor.MutableEntry;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteCache;
 import org.apache.ignite.IgniteDataStreamer;
@@ -29,6 +26,10 @@ import org.apache.ignite.configuration.CacheConfiguration;
 import org.apache.ignite.examples.ExampleNodeStartup;
 import org.apache.ignite.examples.ExamplesUtils;
 import org.apache.ignite.stream.StreamTransformer;
+
+import javax.cache.processor.MutableEntry;
+import java.util.List;
+import java.util.Random;
 
 /**
  * Stream random numbers into the streaming cache.

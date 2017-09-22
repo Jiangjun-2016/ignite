@@ -17,10 +17,6 @@
 
 package org.apache.ignite.examples.streaming;
 
-import java.io.Serializable;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteCache;
 import org.apache.ignite.IgniteDataStreamer;
@@ -33,6 +29,11 @@ import org.apache.ignite.configuration.CacheConfiguration;
 import org.apache.ignite.examples.ExampleNodeStartup;
 import org.apache.ignite.examples.ExamplesUtils;
 import org.apache.ignite.stream.StreamVisitor;
+
+import java.io.Serializable;
+import java.util.List;
+import java.util.Map;
+import java.util.Random;
 
 /**
  * This examples demonstrates the stream visitor which allows to customize the processing

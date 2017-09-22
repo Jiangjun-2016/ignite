@@ -17,7 +17,6 @@
 
 package org.apache.ignite.examples.binary.datagrid.store.auto;
 
-import java.sql.Types;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteCache;
 import org.apache.ignite.Ignition;
@@ -31,6 +30,8 @@ import org.apache.ignite.examples.ExampleNodeStartup;
 import org.apache.ignite.examples.model.Person;
 import org.apache.ignite.examples.util.DbH2ServerStartup;
 import org.apache.ignite.transactions.Transaction;
+
+import java.sql.Types;
 
 import static org.apache.ignite.cache.CacheAtomicityMode.TRANSACTIONAL;
 

@@ -17,15 +17,7 @@
 
 package org.apache.ignite.examples.streaming.wordcount.socket;
 
-import java.io.UnsupportedEncodingException;
-import java.net.InetAddress;
-import java.util.Map;
-
-import org.apache.ignite.Ignite;
-import org.apache.ignite.IgniteCache;
-import org.apache.ignite.IgniteDataStreamer;
-import org.apache.ignite.IgniteException;
-import org.apache.ignite.Ignition;
+import org.apache.ignite.*;
 import org.apache.ignite.cache.affinity.AffinityUuid;
 import org.apache.ignite.configuration.CacheConfiguration;
 import org.apache.ignite.examples.ExampleNodeStartup;
@@ -36,6 +28,10 @@ import org.apache.ignite.lang.IgniteBiTuple;
 import org.apache.ignite.stream.StreamSingleTupleExtractor;
 import org.apache.ignite.stream.socket.SocketMessageConverter;
 import org.apache.ignite.stream.socket.SocketStreamer;
+
+import java.io.UnsupportedEncodingException;
+import java.net.InetAddress;
+import java.util.Map;
 
 /**
  * Example demonstrates streaming of data from external components into Ignite cache.

@@ -17,7 +17,6 @@
 
 package org.apache.ignite.examples.datagrid;
 
-import java.util.UUID;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteCache;
 import org.apache.ignite.IgniteException;
@@ -27,9 +26,9 @@ import org.apache.ignite.examples.ExampleNodeStartup;
 import org.apache.ignite.lang.IgniteBiPredicate;
 import org.apache.ignite.lang.IgnitePredicate;
 
-import static org.apache.ignite.events.EventType.EVT_CACHE_OBJECT_PUT;
-import static org.apache.ignite.events.EventType.EVT_CACHE_OBJECT_READ;
-import static org.apache.ignite.events.EventType.EVT_CACHE_OBJECT_REMOVED;
+import java.util.UUID;
+
+import static org.apache.ignite.events.EventType.*;
 
 /**
  * This examples demonstrates events API. Note that ignite events are disabled by default and

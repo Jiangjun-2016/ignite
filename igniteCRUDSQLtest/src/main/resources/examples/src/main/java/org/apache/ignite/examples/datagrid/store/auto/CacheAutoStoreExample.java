@@ -17,11 +17,8 @@
 
 package org.apache.ignite.examples.datagrid.store.auto;
 
-import java.sql.Types;
-import java.util.UUID;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteCache;
-import org.apache.ignite.IgniteException;
 import org.apache.ignite.Ignition;
 import org.apache.ignite.cache.store.jdbc.CacheJdbcPojoStore;
 import org.apache.ignite.cache.store.jdbc.CacheJdbcPojoStoreFactory;
@@ -34,6 +31,8 @@ import org.apache.ignite.examples.model.Person;
 import org.apache.ignite.examples.util.DbH2ServerStartup;
 import org.apache.ignite.transactions.Transaction;
 import org.h2.jdbcx.JdbcConnectionPool;
+
+import java.sql.Types;
 
 import static org.apache.ignite.cache.CacheAtomicityMode.TRANSACTIONAL;
 

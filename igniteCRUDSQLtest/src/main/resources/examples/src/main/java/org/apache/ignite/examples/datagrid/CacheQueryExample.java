@@ -17,24 +17,21 @@
 
 package org.apache.ignite.examples.datagrid;
 
-import java.util.List;
-import javax.cache.Cache;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteCache;
 import org.apache.ignite.Ignition;
 import org.apache.ignite.binary.BinaryObject;
 import org.apache.ignite.cache.CacheMode;
 import org.apache.ignite.cache.affinity.AffinityKey;
-import org.apache.ignite.cache.query.QueryCursor;
-import org.apache.ignite.cache.query.ScanQuery;
-import org.apache.ignite.cache.query.SqlFieldsQuery;
-import org.apache.ignite.cache.query.SqlQuery;
-import org.apache.ignite.cache.query.TextQuery;
+import org.apache.ignite.cache.query.*;
 import org.apache.ignite.configuration.CacheConfiguration;
 import org.apache.ignite.examples.ExampleNodeStartup;
 import org.apache.ignite.examples.model.Organization;
 import org.apache.ignite.examples.model.Person;
 import org.apache.ignite.lang.IgniteBiPredicate;
+
+import javax.cache.Cache;
+import java.util.List;
 
 /**
  * Cache queries example. This example demonstrates SQL, TEXT, and FULL SCAN

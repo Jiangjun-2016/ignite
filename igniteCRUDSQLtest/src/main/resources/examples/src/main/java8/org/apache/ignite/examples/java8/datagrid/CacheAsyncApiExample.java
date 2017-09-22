@@ -17,8 +17,6 @@
 
 package org.apache.ignite.examples.java8.datagrid;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteCache;
 import org.apache.ignite.IgniteException;
@@ -27,6 +25,9 @@ import org.apache.ignite.cache.CacheMode;
 import org.apache.ignite.configuration.CacheConfiguration;
 import org.apache.ignite.examples.ExampleNodeStartup;
 import org.apache.ignite.lang.IgniteFuture;
+
+import java.util.ArrayList;
+import java.util.Collection;
 
 /**
  * This example demonstrates some of the cache rich API capabilities.

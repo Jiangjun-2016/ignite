@@ -17,7 +17,6 @@
 
 package org.apache.ignite.schema;
 
-import javax.cache.Cache;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteCache;
 import org.apache.ignite.IgniteException;
@@ -26,6 +25,8 @@ import org.apache.ignite.cache.store.jdbc.CacheJdbcPojoStore;
 import org.apache.ignite.cache.store.jdbc.CacheJdbcPojoStoreFactory;
 import org.apache.ignite.configuration.CacheConfiguration;
 import org.apache.ignite.transactions.Transaction;
+
+import javax.cache.Cache;
 
 /**
  * This demo demonstrates the use of cache with {@link CacheJdbcPojoStore}

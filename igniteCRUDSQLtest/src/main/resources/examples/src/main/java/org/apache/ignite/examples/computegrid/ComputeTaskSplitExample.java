@@ -17,9 +17,6 @@
 
 package org.apache.ignite.examples.computegrid;
 
-import java.util.Collection;
-import java.util.LinkedList;
-import java.util.List;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteException;
 import org.apache.ignite.Ignition;
@@ -29,6 +26,10 @@ import org.apache.ignite.compute.ComputeJobResult;
 import org.apache.ignite.compute.ComputeTaskSplitAdapter;
 import org.apache.ignite.examples.ExampleNodeStartup;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Collection;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Demonstrates a simple use of Ignite with {@link ComputeTaskSplitAdapter}.

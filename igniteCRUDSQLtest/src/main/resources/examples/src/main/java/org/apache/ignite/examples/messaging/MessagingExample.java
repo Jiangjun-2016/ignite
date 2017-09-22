@@ -17,8 +17,6 @@
 
 package org.apache.ignite.examples.messaging;
 
-import java.util.UUID;
-import java.util.concurrent.CountDownLatch;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteException;
 import org.apache.ignite.IgniteMessaging;
@@ -28,6 +26,9 @@ import org.apache.ignite.examples.ExampleNodeStartup;
 import org.apache.ignite.examples.ExamplesUtils;
 import org.apache.ignite.lang.IgniteBiPredicate;
 import org.apache.ignite.resources.IgniteInstanceResource;
+
+import java.util.UUID;
+import java.util.concurrent.CountDownLatch;
 
 /**
  * Example that demonstrates how to exchange messages between nodes. Use such

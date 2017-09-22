@@ -17,8 +17,6 @@
 
 package org.apache.ignite.examples.computegrid.failover;
 
-import java.util.Arrays;
-import java.util.List;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteException;
 import org.apache.ignite.IgniteLogger;
@@ -31,6 +29,9 @@ import org.apache.ignite.lang.IgniteBiTuple;
 import org.apache.ignite.lang.IgniteClosure;
 import org.apache.ignite.resources.LoggerResource;
 import org.apache.ignite.resources.TaskSessionResource;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Demonstrates the usage of checkpoints in Ignite.

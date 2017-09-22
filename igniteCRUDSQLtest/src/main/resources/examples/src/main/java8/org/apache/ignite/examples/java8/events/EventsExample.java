@@ -17,7 +17,6 @@
 
 package org.apache.ignite.examples.java8.events;
 
-import java.util.UUID;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteException;
 import org.apache.ignite.Ignition;
@@ -28,6 +27,8 @@ import org.apache.ignite.lang.IgniteBiPredicate;
 import org.apache.ignite.lang.IgnitePredicate;
 import org.apache.ignite.lang.IgniteRunnable;
 import org.apache.ignite.resources.TaskSessionResource;
+
+import java.util.UUID;
 
 import static org.apache.ignite.events.EventType.EVTS_TASK_EXECUTION;
 

@@ -17,14 +17,6 @@
 
 package org.apache.ignite.examples.datagrid.store;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.Serializable;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-import java.util.Scanner;
-import javax.cache.configuration.FactoryBuilder;
-import javax.cache.integration.CacheLoaderException;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteCache;
 import org.apache.ignite.IgniteException;
@@ -39,6 +31,15 @@ import org.apache.ignite.internal.util.IgniteUtils;
 import org.apache.ignite.internal.util.typedef.T2;
 import org.apache.ignite.lang.IgniteBiTuple;
 import org.jetbrains.annotations.Nullable;
+
+import javax.cache.configuration.FactoryBuilder;
+import javax.cache.integration.CacheLoaderException;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.Serializable;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+import java.util.Scanner;
 
 /**
  * Example of how to load data from CSV file using {@link CacheLoadOnlyStoreAdapter}.

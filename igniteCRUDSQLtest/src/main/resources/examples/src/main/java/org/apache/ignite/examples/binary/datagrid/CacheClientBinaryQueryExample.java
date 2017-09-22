@@ -17,14 +17,10 @@
 
 package org.apache.ignite.examples.binary.datagrid;
 
-import java.sql.Timestamp;
-import java.util.Arrays;
-import java.util.LinkedHashMap;
-import java.util.List;
-import javax.cache.Cache;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteCache;
 import org.apache.ignite.Ignition;
+import org.apache.ignite.binary.BinaryObject;
 import org.apache.ignite.cache.CacheMode;
 import org.apache.ignite.cache.QueryEntity;
 import org.apache.ignite.cache.QueryIndex;
@@ -34,12 +30,13 @@ import org.apache.ignite.cache.query.SqlFieldsQuery;
 import org.apache.ignite.cache.query.SqlQuery;
 import org.apache.ignite.cache.query.TextQuery;
 import org.apache.ignite.configuration.CacheConfiguration;
-import org.apache.ignite.examples.model.Address;
-import org.apache.ignite.examples.model.Employee;
-import org.apache.ignite.examples.model.EmployeeKey;
-import org.apache.ignite.examples.model.Organization;
-import org.apache.ignite.examples.model.OrganizationType;
-import org.apache.ignite.binary.BinaryObject;
+import org.apache.ignite.examples.model.*;
+
+import javax.cache.Cache;
+import java.sql.Timestamp;
+import java.util.Arrays;
+import java.util.LinkedHashMap;
+import java.util.List;
 
 /**
  * This example demonstrates use of binary objects with cache queries.

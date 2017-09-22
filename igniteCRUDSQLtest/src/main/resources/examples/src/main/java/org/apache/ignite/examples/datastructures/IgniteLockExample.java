@@ -17,14 +17,11 @@
 
 package org.apache.ignite.examples.datastructures;
 
-import java.util.UUID;
-import org.apache.ignite.Ignite;
-import org.apache.ignite.IgniteCache;
-import org.apache.ignite.IgniteCondition;
-import org.apache.ignite.IgniteLock;
-import org.apache.ignite.Ignition;
+import org.apache.ignite.*;
 import org.apache.ignite.examples.ExampleNodeStartup;
 import org.apache.ignite.lang.IgniteRunnable;
+
+import java.util.UUID;
 
 /**
  * This example demonstrates cache based reentrant lock.

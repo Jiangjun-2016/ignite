@@ -17,7 +17,6 @@
 
 package org.apache.ignite.examples.servicegrid;
 
-import java.util.Collection;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteServices;
 import org.apache.ignite.Ignition;
@@ -25,6 +24,8 @@ import org.apache.ignite.examples.ExampleNodeStartup;
 import org.apache.ignite.examples.ExamplesUtils;
 import org.apache.ignite.lang.IgniteCallable;
 import org.apache.ignite.resources.ServiceResource;
+
+import java.util.Collection;
 
 /**
  * Example that demonstrates how to deploy distributed services in Ignite.

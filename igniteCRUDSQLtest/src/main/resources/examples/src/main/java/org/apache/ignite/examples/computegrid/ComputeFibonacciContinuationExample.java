@@ -17,9 +17,6 @@
 
 package org.apache.ignite.examples.computegrid;
 
-import java.math.BigInteger;
-import java.util.UUID;
-import java.util.concurrent.ConcurrentMap;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteCompute;
 import org.apache.ignite.IgniteException;
@@ -36,6 +33,10 @@ import org.apache.ignite.lang.IgnitePredicate;
 import org.apache.ignite.resources.IgniteInstanceResource;
 import org.apache.ignite.resources.JobContextResource;
 import org.jetbrains.annotations.Nullable;
+
+import java.math.BigInteger;
+import java.util.UUID;
+import java.util.concurrent.ConcurrentMap;
 
 /**
  * This example demonstrates how to use continuation feature of Ignite by

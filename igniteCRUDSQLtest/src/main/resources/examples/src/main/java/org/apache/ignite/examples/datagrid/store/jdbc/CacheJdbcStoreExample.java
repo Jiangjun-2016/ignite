@@ -17,9 +17,6 @@
 
 package org.apache.ignite.examples.datagrid.store.jdbc;
 
-import java.util.UUID;
-import javax.cache.configuration.Factory;
-import javax.cache.configuration.FactoryBuilder;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteCache;
 import org.apache.ignite.IgniteException;
@@ -33,6 +30,10 @@ import org.apache.ignite.examples.model.Person;
 import org.apache.ignite.examples.util.DbH2ServerStartup;
 import org.apache.ignite.transactions.Transaction;
 import org.h2.jdbcx.JdbcConnectionPool;
+
+import javax.cache.configuration.Factory;
+import javax.cache.configuration.FactoryBuilder;
+import java.util.UUID;
 
 import static org.apache.ignite.cache.CacheAtomicityMode.TRANSACTIONAL;
 

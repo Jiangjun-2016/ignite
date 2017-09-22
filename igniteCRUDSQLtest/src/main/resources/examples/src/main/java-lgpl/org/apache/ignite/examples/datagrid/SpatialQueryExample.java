@@ -19,14 +19,17 @@ package org.apache.ignite.examples.datagrid;
 
 import com.vividsolutions.jts.geom.*;
 import com.vividsolutions.jts.io.*;
-import org.apache.ignite.*;
+import org.apache.ignite.Ignite;
+import org.apache.ignite.IgniteCache;
+import org.apache.ignite.Ignition;
 import org.apache.ignite.cache.query.SqlQuery;
-import org.apache.ignite.cache.query.annotations.*;
-import org.apache.ignite.configuration.*;
-
-import javax.cache.*;
-import java.util.*;
+import org.apache.ignite.cache.query.annotations.QuerySqlField;
+import org.apache.ignite.configuration.CacheConfiguration;
 import org.apache.ignite.examples.ExampleNodeStartup;
+
+import javax.cache.Cache;
+import java.util.Collection;
+import java.util.Random;
 
 /**
  * This examples shows the usage of geospatial queries and indexes in Apache Ignite.

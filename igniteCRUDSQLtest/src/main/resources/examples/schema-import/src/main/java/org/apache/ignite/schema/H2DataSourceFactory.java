@@ -17,9 +17,10 @@
 
 package org.apache.ignite.schema;
 
+import org.h2.jdbcx.JdbcConnectionPool;
+
 import javax.cache.configuration.Factory;
 import javax.sql.DataSource;
-import org.h2.jdbcx.JdbcConnectionPool;
 
 /**
  * Datasource to use for store tests.

@@ -17,12 +17,13 @@
 
 package org.apache.ignite.examples.misc.springbean;
 
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Future;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.examples.ExampleNodeStartup;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Future;
 
 /**
  * Demonstrates a simple use of Ignite configured with Spring.

@@ -17,9 +17,10 @@
 
 package org.apache.ignite.examples.model;
 
+import org.apache.ignite.cache.query.annotations.QuerySqlField;
+
 import java.sql.Timestamp;
 import java.util.concurrent.atomic.AtomicLong;
-import org.apache.ignite.cache.query.annotations.QuerySqlField;
 
 /**
  * This class represents organization object.

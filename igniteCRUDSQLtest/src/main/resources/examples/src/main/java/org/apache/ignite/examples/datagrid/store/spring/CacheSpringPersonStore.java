@@ -17,12 +17,6 @@
 
 package org.apache.ignite.examples.datagrid.store.spring;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.concurrent.atomic.AtomicInteger;
-import javax.cache.Cache;
-import javax.cache.integration.CacheLoaderException;
-import javax.sql.DataSource;
 import org.apache.ignite.IgniteException;
 import org.apache.ignite.cache.store.CacheStore;
 import org.apache.ignite.cache.store.CacheStoreAdapter;
@@ -33,6 +27,13 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowCallbackHandler;
 import org.springframework.jdbc.core.RowMapper;
+
+import javax.cache.Cache;
+import javax.cache.integration.CacheLoaderException;
+import javax.sql.DataSource;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Example of {@link CacheStore} implementation that uses JDBC

@@ -17,11 +17,12 @@
 
 package org.apache.ignite.examples.streaming.wordcount;
 
+import org.apache.ignite.cache.affinity.AffinityUuid;
+import org.apache.ignite.configuration.CacheConfiguration;
+
 import javax.cache.configuration.FactoryBuilder;
 import javax.cache.expiry.CreatedExpiryPolicy;
 import javax.cache.expiry.Duration;
-import org.apache.ignite.cache.affinity.AffinityUuid;
-import org.apache.ignite.configuration.CacheConfiguration;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
 

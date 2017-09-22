@@ -17,18 +17,15 @@
 
 package org.apache.ignite.examples.datagrid;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Map;
-import org.apache.ignite.Ignite;
-import org.apache.ignite.IgniteCache;
-import org.apache.ignite.IgniteCompute;
-import org.apache.ignite.IgniteException;
-import org.apache.ignite.Ignition;
+import org.apache.ignite.*;
 import org.apache.ignite.cache.affinity.Affinity;
 import org.apache.ignite.cluster.ClusterNode;
 import org.apache.ignite.examples.ExampleNodeStartup;
 import org.apache.ignite.lang.IgniteRunnable;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Map;
 
 /**
  * This example demonstrates the simplest code that populates the distributed cache

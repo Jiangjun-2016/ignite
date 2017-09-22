@@ -17,8 +17,6 @@
 
 package org.apache.ignite.examples.computegrid;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteCompute;
 import org.apache.ignite.IgniteException;
@@ -26,6 +24,9 @@ import org.apache.ignite.Ignition;
 import org.apache.ignite.examples.ExampleNodeStartup;
 import org.apache.ignite.lang.IgniteFuture;
 import org.apache.ignite.lang.IgniteRunnable;
+
+import java.util.ArrayList;
+import java.util.Collection;
 
 /**
  * Demonstrates a simple use of {@link IgniteRunnable}.

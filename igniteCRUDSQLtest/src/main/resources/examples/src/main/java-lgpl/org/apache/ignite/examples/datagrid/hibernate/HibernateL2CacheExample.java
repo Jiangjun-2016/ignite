@@ -17,9 +17,6 @@
 
 package org.apache.ignite.examples.datagrid.hibernate;
 
-import java.net.URL;
-import java.util.Arrays;
-import java.util.List;
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteCache;
 import org.apache.ignite.IgniteException;
@@ -35,6 +32,10 @@ import org.hibernate.cache.spi.access.AccessType;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistryBuilder;
 import org.hibernate.stat.SecondLevelCacheStatistics;
+
+import java.net.URL;
+import java.util.Arrays;
+import java.util.List;
 
 import static org.apache.ignite.cache.CacheAtomicityMode.ATOMIC;
 import static org.apache.ignite.cache.CacheAtomicityMode.TRANSACTIONAL;

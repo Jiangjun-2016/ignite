@@ -17,13 +17,14 @@
 
 package org.apache.ignite.examples.util;
 
-import java.io.IOException;
-import java.io.StringReader;
-import java.sql.SQLException;
 import org.apache.ignite.IgniteException;
 import org.h2.jdbcx.JdbcConnectionPool;
 import org.h2.tools.RunScript;
 import org.h2.tools.Server;
+
+import java.io.IOException;
+import java.io.StringReader;
+import java.sql.SQLException;
 
 /**
  * Start H2 database TCP server in order to access sample in-memory database from other processes.

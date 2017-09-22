@@ -17,14 +17,15 @@
 
 package org.apache.ignite.examples.computegrid.failover;
 
-import java.util.Arrays;
-import java.util.Collections;
 import org.apache.ignite.IgniteException;
 import org.apache.ignite.Ignition;
 import org.apache.ignite.configuration.IgniteConfiguration;
 import org.apache.ignite.spi.checkpoint.sharedfs.SharedFsCheckpointSpi;
 import org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi;
 import org.apache.ignite.spi.discovery.tcp.ipfinder.vm.TcpDiscoveryVmIpFinder;
+
+import java.util.Arrays;
+import java.util.Collections;
 
 /**
  * Starts up an empty node with checkpoint-enabled configuration.
